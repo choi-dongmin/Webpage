@@ -1,0 +1,259 @@
+    .container{
+      height: 1500px;
+      background-color: #ffffff;
+    }
+    .navi{
+        background-color : #495057;
+    }
+    #navibar ul li a{
+      color : #8c8c8c;
+      border-bottom:3px solid transparent;
+    }
+    #navibar nav ul a :hover{
+      color:#ff6b6b;
+      border-bottom :3px solid #ff6b6b;
+    }
+    ul{
+      list-style : none;
+    }
+    nav{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding: .25em;
+      height:45px;
+    }
+    nav ul{
+      flex : 1;
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+      margin:0;
+    }
+    nav ul li{
+      padding : 0;
+      margin:0;
+    }
+    nav ul li a{
+      padding : 1em;
+      font-size:0.85em;
+      display:flex;
+      align-items:flex-end;
+      text-decoration:none;
+    }
+    #navibar ul li a:link{
+      color : white;
+      text-decoration: none;
+    }
+    #navibar ul li a:hover{
+      color : lightgray;
+    }
+    #navibar ul li a:hover::before{
+      width : 100%;
+    }
+    #navibar>ul>li:hover>.category{
+        height: 200px;
+    }
+  /* 네비와 큰 부분의 스타일*/
+    .header{
+      height: 400px;
+    }
+    .button input[id*="button"]{
+        display: none;
+    }
+
+    #my_photo{
+      background-color: lightgray;
+      align-items: center;
+    }
+
+    #my_photo h2{
+      font-family: 'Roboto', sans-serif;
+      margin-top: -20px;
+      font-size: 20px;
+        }
+    #menu{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      font-family: 'Pridi', serif;
+      margin: 0 20%;
+      height: 320px
+      width: 100vh;
+      text-align:center;
+      font-size: 45px;
+    }
+    #menu div a{
+      color:lightgray;
+      text-decoration: none;
+    }
+    #menu div :hover{
+      color:black;
+      text-decoration: none;
+    }
+    #top_line{
+      margin: 0 15%
+    }
+    .main{
+      margin-top: -50px;
+      width: 300vw;
+      height: 800px;
+      transition: transform 0.8s;
+      }
+    .page{
+      float: left;
+    }
+    .inner{
+      padding-left: 17%;
+      padding-right: 17%;
+    }
+    .inner_top{
+      margin-top: 110px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    #intro{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
+      font-size :30px;
+      margin-top: -55px;
+      margin-left: -50px;
+    }
+    .inner_middle{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left: -15%;
+    }
+    #info_box{
+      margin-left: -10%;
+    }
+    #info_box span{
+      font-family: 'Alata', sans-serif; font-size:15px; padding-left: 3px; margin-top:10px;
+    }
+    #info_box img{
+      width:40px;
+    }
+    #call{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+    #mail{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      margin-top: 70px;
+    }
+    #add{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      margin-top: 50px;
+    }
+    #add img{
+      margin-top: 15px;
+    }
+    #contact_box{
+      margin-left: 40%;
+      margin-top: -10px;
+    }
+    #contact_box span{
+      font-family: 'Alata', sans-serif; font-size:15px; padding-left: 3px; margin-top: 10px;
+    }
+    #contact_box img{
+      width:40px;
+    }
+    #contact_box a{
+      text-decoration: none;
+      color: black;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+    #contact_box a :hover{
+      text-decoration: none;
+      color: lightgray;
+    }
+
+    #my_page{
+      margin-top: 70px;
+    }
+    #git{
+      margin-top: 70px;
+    }
+
+
+    @media(max-width:1300px) {
+      #menu{
+        font-size: 40px;
+      }
+      .main{
+        margin-top: -100px;
+      }
+      #intro {
+          font-size: 22px;
+        }
+      #info_box{
+        margin-left: 50px;
+
+      }
+      #contact_box{
+        margin-left: 100px;
+        margin-top: 0px;
+      }
+      #contact_box span{
+        display: none;
+      }
+      @media(max-width:1000px) {
+        #menu{
+          font-size: 30px;
+        }
+        #intro {
+          font-size: 17px;
+        }
+      }
+      @media(max-width:800px) {
+        #menu{
+          font-size: 20px;
+        }
+        .main{
+          margin-top: -100px;
+        }
+        #inner_top_about_me{
+          margin-top: 90px;
+        }
+        #intro {
+          font-size: 14px;
+        }
+        #inner_top_about_me img{
+          display: none;
+        }
+        #intro_second_sentence{
+          margin-left: -100px;
+        }
+        #intro_third_sentence{
+          margin-left: -180px;
+          margin-bottom: -50px;
+        }
+        .inner span{
+          font-size: 25px;
+        }
+        #contact_img img{
+          padding-left: 50px;
+        }
+        #contact_box span{
+          display: none;
+          }
+        .info{
+          margin-top: 270px;
+          margin-left: -250px;
+        }
+        #info_box span{
+          font-size: 10px;
+          margin-top: 15px;
+        }
+        #add span{
+          margin-top:25px;
+        }
+
+        .contact{
+          margin-top: 268px;
+          margin-left: -60px;
+        }
+
+      }
