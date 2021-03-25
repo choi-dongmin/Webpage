@@ -1,0 +1,363 @@
+    .container{
+      height: 2000px;
+      background-color: #ffffff;
+    }
+    .navi{
+        background-color : #495057;
+    }
+    #navibar ul li a{
+      color : #8c8c8c;
+      border-bottom:3px solid transparent;
+    }
+    #navibar nav ul a :hover{
+      color:#ff6b6b;
+      border-bottom :3px solid #ff6b6b;
+    }
+    ul{
+      list-style : none;
+    }
+    nav{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding: .25em;
+      height:45px;
+    }
+    nav ul{
+      flex : 1;
+      display:flex;
+      justify-content:flex-end;
+      align-items:center;
+      margin:0;
+    }
+    nav ul li{
+      padding : 0;
+      margin:0;
+    }
+    nav ul li a{
+      padding : 1em;
+      font-size:0.85em;
+      display:flex;
+      align-items:flex-end;
+      text-decoration:none;
+    }
+    #navibar ul li a:link{
+      color : white;
+      text-decoration: none;
+    }
+    #navibar ul li a:hover{
+      color : lightgray;
+    }
+    #navibar ul li a:hover:before{
+      width : 100%;
+    }
+    #navibar>ul>li:hover>.category{
+        height: 200px;
+    }
+  /* 네비와 큰 부분의 스타일*/
+    .header{
+      height: 400px;
+    }
+    .button input[id*="button"]{
+      display: none;
+    }
+
+    #my_photo{
+      background-color: lightgray;
+      align-items: center;
+    }
+
+    #my_photo h2{
+      font-family: 'Roboto', sans-serif;
+      margin-top: -20px;
+      font-size: 20px;
+        }
+    #menu{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      font-family: 'Pridi', serif;
+      margin: 0 20%;
+      height: 320px
+      width: 100vh;
+      text-align:center;
+      font-size: 45px;
+    }
+    #menu div a{
+      color:lightgray;
+      text-decoration: none;
+    }
+    #menu div :hover{
+      color:black;
+      text-decoration: none;
+    }
+
+
+    .main{
+      margin-top: -50px;
+      width: 300vw;
+      height: 800px;
+      transition: transform 0.8s;
+      }
+    .page{
+      float: left;
+    }
+    .inners{
+      padding-left: 17%;
+      padding-right: 17%;
+    }
+    #a_little_about_me{
+      margin-top: 110px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    #intro{
+      font-family: 'Source Sans Pro', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
+      font-size :30px;
+      margin-top: -55px;
+      margin-left: -50px;
+    }
+    #contact{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left: -13%;
+      margin-top: 50px;
+      margin-bottom: 70px;
+    }
+    #info_box{
+      margin-left: -10%;
+    }
+    #info_box span{
+      font-family: 'Alata', sans-serif; font-size:15px; padding-left: 3px; margin-top:10px;
+    }
+    #info_box img{
+      width:40px;
+    }
+    #call{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+    #mail{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      margin-top: 70px;
+    }
+    #add{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      margin-top: 50px;
+    }
+    #add img{
+      margin-top: 15px;
+    }
+    #contact_box{
+      margin-left: 40%;
+      margin-top: -10px;
+    }
+    #contact_box span{
+      font-family: 'Alata', sans-serif; font-size:15px; padding-left: 3px; margin-top: 10px;
+    }
+    #contact_box img{
+      width:40px;
+    }
+    #contact_box a{
+      text-decoration: none;
+      color: black;
+      display: grid;
+      grid-template-columns: 50px 1fr;
+    }
+    #contact_box a :hover{
+      text-decoration: none;
+      color: lightgray;
+    }
+
+    #my_page{
+      margin-top: 70px;
+    }
+    #git{
+      margin-top: 70px;
+    }
+
+    #favorites{
+      padding-top: 70px;
+      padding-left: 2% ;
+    }
+    .favorites_index{
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      padding-bottom: 100px;
+
+      background-color: ;
+    }
+    .favorites_img_next_text{
+      padding-left: 50px;
+      font-family: 'Poiret One', cursive;
+      font-size: 50px;
+    }
+    .favorites_elements{
+      width: 66vw;
+      height: 50px;
+      padding-top:  70px;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      background-color:  ;
+      text-align: center;
+      font-family: 'Yellowtail', cursive;
+      font-size: 25px;
+      margin-left: -10px;
+    }
+
+    .favorites_elements a{
+      text-decoration: none;
+      color: black;
+    }
+
+    .projects_container{
+      display: grid;
+      grid-template-columns: 0.5fr 2fr;
+    }
+    .projects_container input{
+      display: none;
+    }
+    .projects_container{
+      margin-top: 30px;
+      overflow: hidden;
+
+    }
+    .projects_containerKR{
+      display: grid;
+      grid-template-columns: 0.5fr 2fr;
+    }
+    .projects_containerKR input{
+      display: none;
+    }
+    .projects_containerKR{
+      margin-top: 30px;
+      overflow: hidden;
+
+    }
+    .projects_left_menu ul li{
+      margin-top: 30px;
+      font-family: 'Libre Baskerville', serif;
+    }
+    .projects_800px_menu{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      list-style : none;
+      text-align: center;
+      font-family: 'Staatliches', cursive;
+      margin-bottom: -10px;
+      display: none;
+      }
+    .projects_800px_menu li:hover{
+      color:grey;
+    }
+    .projects_containerKR label:hover{
+      color:grey;
+    }
+    .projects_main{
+      margin-top: -300px;
+      height: 3000px;
+      transition: transform 1.5s;
+
+    }
+    .projects_indexs{
+      height: 1100px;
+      width :50vw;
+      margin-top: 300px;
+      padding-bottom: 200px;
+    }
+    .projects_indexs ul li{
+      padding-bottom: 50px;
+      font-family: 'Staatliches', cursive;
+      font-size: 15px;
+    }
+
+    .projects_indexs ul li div{
+      height: 300px;
+
+    }
+    .projects_indexs ul li div img{
+        height: 300px;
+        width: 300px;
+        border-radius: 3%;
+    }
+    .projects_index{
+      display: grid;
+      grid-template-columns: 300px 1fr;
+    }
+    .projects_index_text{
+      padding-top: 100px;
+      text-align: center;
+      top:50%;
+      font-family: 'Overpass', sans-serif;
+    }
+    .projects_index_textKR{
+      padding-top: 100px;
+      text-align: center;
+      margin-left: 10%;
+    }
+
+    @media(max-width:1300px) {
+      #menu{
+        font-size: 40px;
+      }
+      .main{
+        margin-top: -100px;
+      }
+      #intro {
+          font-size: 22px;
+        }
+      #info_box{
+        margin-left: 50px;
+
+      }
+      #contact_box{
+        margin-left: 100px;
+        margin-top: 0px;
+      }
+      #contact_box span{
+        display: none;
+      }
+      .projects_index_text{
+        margin-top: -50px;
+      }
+      .projects_index_textKR{
+        display: none;;
+      }
+      .projects_index_textKR a{
+        display: none;
+      }
+      .projects_containerKR{
+        padding-left: 100px;
+      }
+    }
+    @media(max-width:1000px) {
+      #menu{
+        font-size: 30px;
+      }
+      #intro {
+        font-size: 30px;
+      }
+      .projects_index_text{
+        margin-left:  20px;
+        margin-top: -50px;
+      }
+      .projects_index_textKR{
+        margin-left:  20px;
+        margin-top: -50px;
+      }
+      .projects_index_text a{
+        display: none;
+      }
+
+      .projects_index_textKR a{
+        display: none;
+      }
+    }
+    @media(min-width:1000px) {
+      .projects_img a{
+        display: none;
+      }
+    }

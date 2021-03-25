@@ -1,0 +1,250 @@
+.container{
+  height: 1500px;
+  background-color: #ffffff;
+}
+.navi{
+    background-color : #495057;
+}
+#navibar ul li a{
+  color : #8c8c8c;
+  border-bottom:3px solid transparent;
+}
+#navibar nav ul a :hover{
+  color:#ff6b6b;
+  border-bottom :3px solid #ff6b6b;
+}
+ul{
+  list-style : none;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: .25em;
+  height:45px;
+}
+nav ul{
+  flex : 1;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  margin:0;
+}
+nav ul li{
+  padding : 0;
+  margin:0;
+}
+nav ul li a{
+  padding : 1em;
+  font-size:0.85em;
+  display:flex;
+  align-items:flex-end;
+  text-decoration:none;
+}
+#navibar ul li a:link{
+  color : gray;
+  text-decoration: none;
+}
+#navibar ul li a:hover{
+  color : lightgray;
+}
+#navibar ul li a:hover:before{
+  width : 100%;
+}
+#navibar>ul>li:hover>.category{
+    height: 200px;
+}
+/* 네비와 큰 부분의 스타일*/
+.header{
+  height: 400px;
+}
+.button input[id*="button"]{
+  display: none;
+}
+
+#my_photo{
+  background-color: lightgray;
+  align-items: center;
+}
+
+#my_photo h2{
+  font-family: 'Poor Story', cursive;
+  margin-top: -20px;
+  font-size: 23px;
+    }
+
+#menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: 'Pridi', serif;
+  margin: 0 20%;
+  height: 320px
+  width: 100vh;
+  text-align:center;
+  font-size: 45px;
+}
+#menu div a{
+  color:lightgray;
+  text-decoration: none;
+}
+#menu div :hover{
+  color:black;
+  text-decoration: none;
+}
+
+
+.main{
+  margin-top: -50px;
+  width: 300vw;
+  height: 800px;
+  transition: transform 0.8s;
+  }
+.page{
+  float: left;
+}
+.inner{
+  padding-left: 17%;
+  padding-right: 17%;
+}
+.inner_top{
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+#intro{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size :40px;
+  margin-top: -55px;
+  margin-left: -50px;
+}
+
+#intro_third_sentence{
+  margin-left: 100px;
+}
+.inner_middle{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: -15%;
+}
+#info_box{
+  margin-left: -10%;
+}
+#info_box span{
+  font-family: 'Alata', sans-serif; font-size:15px; padding-left: 3px; margin-top:10px;
+}
+#info_box img{
+  width:40px;
+}
+#call{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+#mail{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 70px;
+}
+#add{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 50px;
+}
+#add img{
+  margin-top: 15px;
+}
+#contact_box{
+  margin-left: 40%;
+  margin-top: -10px;
+}
+#contact_box span{
+  font-family: 'Alata', sans-serif; font-size:15px; padding-left: 3px; margin-top: 10px;
+}
+#contact_box img{
+  width:40px;
+}
+#contact_box a{
+  text-decoration: none;
+  color: black;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+#contact_box a :hover{
+  text-decoration: none;
+  color: lightgray;
+}
+
+#my_page{
+  margin-top: 70px;
+}
+#git{
+  margin-top: 70px;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: 2250px;
+  overflow:hidden;
+}
+.projects_container{
+  margin-top: 87px;
+  transition: transform 0.8s;
+}
+.projects_main_inner{
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 2%;
+  margin-bottom: 210px;
+}
+.projects_left_menu_bar li{
+  margin-top: 30px;
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+}
+.projects_left_menu_bar li a{
+  text-decoration: none;
+  color: black;
+}
+.projects_left_menu_bar li a:hover{
+  color:grey;
+}
+.slides li img{
+  width: 300px;
+  height: 300px;
+  border-radius: 3%;
+  margin-top: 30px;
+  margin-bottom:  30px;
+  margin-left: 70px;
+}
+
+@media(max-width:1300px) {
+  #menu{
+    font-size: 40px;
+  }
+  .main{
+    margin-top: -100px;
+  }
+  #intro {
+      font-size: 22px;
+    }
+  #info_box{
+    margin-left: 50px;
+
+  }
+  #contact_box{
+    margin-left: 100px;
+    margin-top: 0px;
+  }
+  #contact_box span{
+    display: none;
+  }
+}
+  @media(max-width:1000px) {
+    #menu{
+      font-size: 30px;
+    }
+    #intro {
+      font-size: 17px;
+    }
+  }
