@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8" name="Distcription" content = "Choi Dong Min HomePage" >
-  <link rel="stylesheet" href="./CSS/MainPage.css" type="text/css">
+  <link rel="stylesheet" href="./CSS/Mainpage.css" type="text/css">
   <link rel="stylesheet" media="(max-width: 800px)" href="./CSS/media_800px.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./JS/MainJS.js"> </script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -20,10 +21,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-
-  <!-- NOTE: 한국 폰트 -->
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="" type="image/x-icon">
   <title>Page by Dong Min</title>
+
+
 </head>
 
 <style>
@@ -33,7 +37,7 @@
   }
 </style>
 
-   <body>
+  <body>
     <nav id="navibar" class="navi">
         <ul>
           <img src="./Image/home.png" style="width:30px; margin-right:-10px;">
@@ -54,22 +58,22 @@
             <h2>Hello! I'm Dong Min</h2>
         </div>
 
-        <div id = "menu" class="menu">
-          <div class="menu_about_me">
+        <div id = "menus" >
+          <div class="menu">
             <a >
               <label for="button_about_me">
                 about me
               </label>
             </a>
           </div>
-          <div class="menu_resume">
+          <div class="menu">
             <a >
               <label for="button_resume">
                 resume
               </label>
             </a>
           </div>
-          <div class="menu_portplio">
+          <div class="menu">
             <a >
               <label for="button_portplio">
               portplio
@@ -80,7 +84,7 @@
       </div>
 
       <div class="button">
-        <input type="radio" name="button" id="button_about_me">
+        <input type="radio" name="button" id="button_about_me" onclick="">
         <input type="radio" name="button" id="button_resume">
         <input type="radio" name="button" id="button_portplio">
       </div>
@@ -197,17 +201,54 @@
         <!-- NOTE: resume page 시작-->
         <div class="page" id="page_resume"style="  width:100vw; height:900px;">
           <div class="inners">
-            <div style="font-family: 'Source Sans Pro', sans-serif; margin-bottom: -30px;">
-              SKILLS
+            <div class="resume_inner_education_history">
+              <div style="font-family: 'Source Sans Pro', sans-serif;">
+                EDUCATION HISTOTY
+              </div>
+              <div class="top_line" style="width:100%; height: 3px; background-color:lightgray;">
+              </div>
+              <div class="education_uni_info">
+                  <center>
+                  <div>
+                    <img src="./Image/resume/education/buimg.png" style="width:150px;">
+                  </div>
+                  <div class="education_info_text">
+                    <p><b>Baekseok University</b></p>
+                    <p>B.S. in <i>business administration</i>, FEB 2021</p>
+                  </div>
+              </div>
             </div>
-            <div class="top_line" style="width:100%; height: 3px; background-color:lightgray;">
-              <p style="font-family: 'Zilla Slab Highlight', cursive; padding-top:20px; font-size:30px;">Languges</p>
+
+            <div class="resume_inner_experiences">
+              <div style="font-family: 'Source Sans Pro', sans-serif; margin-bottom: px;">
+                EXPERIENCE
+              </div>
+              <div class="top_line" style="width:100%; height: 3px; background-color:lightgray; margin-bottom: 100px;">
+              </div>
+              <div class="experiences">
+                <h2>Make webpages and hosting for customer</h2>
+                - Make Webpages and Hosting for customer Use by HTML / CSS / JavaScript / php / AWS
+
+                <br><br><br><br>
+
+                <h2>Develope estimate system by web and hosting</h2>
+                - Develope Korean languges level estimate system by web for students who learning korean from Palacky University Olomouc
+              </div>
             </div>
-            <div id="skills_container">
+
+            <div class="resume_inner_skills">
+              <div style="font-family: 'Source Sans Pro', sans-serif; margin-bottom: -30px;">
+                SKILLS
+              </div>
+              <div class="top_line" style="width:100%; height: 3px; background-color:lightgray;">
+                <center>
+                <p style="font-family: 'Kiwi Maru', serif; padding-top:50px; font-size:30px;">Languges</p>
+              </div>
+              <div id="skills_container">
+              </div>
             </div>
           </div>
         </div>
-
         <!-- NOTE: portplio page 시작-->
         <div class="page" id="portplio"style="  width:100vw;">
           <div class="inners">
@@ -219,10 +260,10 @@
 
             <div class="projects_800px_menu"> <!-- NOTE: 800px 이라일때만 실행 -->
               <div>
-                <li><label for="button_project_coding">Coding</label></li>
+                <li><label for="button_project_coding">Develope</label></li>
               </div>
               <div>
-                <li><label for="button_project_items">Items</label></li>
+                <li><label for="button_project_items">Coding </label></li>
               </div>
             </div>
 
@@ -232,8 +273,8 @@
 
               <div class="projects_left_menu">
                 <ul>
-                  <li><label for="button_project_coding">Coding</label></li>
-                  <li><label for="button_project_items">Items</label></li>
+                  <li><label for="button_project_coding">Delvope</label></li>
+                  <li><label for="button_project_items">Coding</label></li>
                 </ul>
               </div>
               <div class="projects_main">
@@ -245,12 +286,12 @@
                         <div class="projects_img">
                           <img src="./Image/portplio/coding/portplio_project_web_homepage.png" >
                           <center>
-                          <a href="">Check this more here</a>
+                          <a href="">More infomations</a>
                         </div>
                         <div class="projects_index_text">
                           This work is make my webpages. this web is for explain me, introduce myself and communicate with visiter and contact.
                           <br><br>
-                          <a href="">Check this more here</a>
+                          <a href="">More infomations</a>
                         </div>
                       </div>
                     </li>
@@ -260,61 +301,12 @@
                         <div class="projects_img">
                           <img src="./Image/portplio/coding/let's_dnace.png" >
                           <center>
-                          <a href="">Check this more here.</a>
+                          <a href="https://scratch.mit.edu/projects/339084842/">More infomations.</a>
                         </div>
                         <div class="projects_index_text">
                           Make a simple Game in the Scratch. Put together the scratch code and modified character design and simple sounds.
                           <br><br>
-                          <a href="">Check this more here</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      JS Interactive Button
-                      <div class="projects_index" id="Coding_index_03">
-                        <div class="projects_img">
-                          <img src="./Image/portplio/coding/Light_Dark_function.png" >
-                          <center>
-                          <a href="https://choi-dongmin.github.io/JS/JS%20Interactive%20Button/Ex4.html">Check this more here</a>
-                        </div>
-                        <div class="projects_index_text">
-                           Function is write in JS and this function is interactive with button for CSS. Vary basic but necessary system.
-                          <br><br>
-                          <a href="https://choi-dongmin.github.io/JS/JS%20Interactive%20Button/Ex4.html">Check this more here</a>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      Random system function
-                      <div class="projects_index" id="Coding_index_04">
-                        <div class="projects_img">
-                          <img src="./Image/portplio/coding/R_P_S.png" >
-                          <center>
-                          <a href="https://github.com/choi-dongmin/JAVA/tree/%EB%B0%B0%EC%97%B4/Java/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)">Check this more here</a>
-                        </div>
-                        <div class="projects_index_text">
-                          Ues the Java and with that library made a random Rock Paper Scissors game system.
-                          <br><br>
-                          <a href="https://github.com/choi-dongmin/JAVA/tree/%EB%B0%B0%EC%97%B4/Java/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)">Check this more here</a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="projects_indexs" id="items_main" >
-                  <ul>
-                    <li>
-                      Nutritional Supplements Customerization System
-                      <div class="projects_index" id="items_index_01">
-                        <div class="projects_img">
-                          <img src="./Image/portplio/items/Healivery.png" >
-                          <center>
-                          <a href="">Check this more here</a>
-                        </div>
-                        <div class="projects_index_text">
-                          This business model is improve customerization distribution system of nutritional supplement.
-                          <br><br>
-                          <a href="">Check this more here</a>
+                          <a href="https://scratch.mit.edu/projects/339084842/">More infomations</a>
                         </div>
                       </div>
                     </li>
@@ -324,11 +316,63 @@
                         <div class="projects_img">
                           <img src="http://placehold.it/300x300" >
                           <center>
-                          <a href="">Check this more here</a>
+                          <a href="">More infomations</a>
                         </div>
                         <div class="projects_index_text">
                           <br><br>
-                          <a href="">Check this more here</a>
+                          <a href="">More infomations</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      what next..
+                      <div class="projects_index" id="items_index_02">
+                        <div class="projects_img">
+                          <img src="http://placehold.it/300x300" >
+                          <center>
+                          <a href="">More infomations</a>
+                        </div>
+                        <div class="projects_index_text">
+                          <br><br>
+                          <a href="">More infomations</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="projects_indexs" id="items_main" >
+                  <ul>
+                    <li>
+                      JS Interactive Button
+                      <div class="projects_index" id="Coding_index_03">
+                        <div class="projects_img">
+                          <img src="./Image/portplio/coding/Light_Dark_function.png" >
+                          <center>
+                            <a href="https://choi-dongmin.github.io/JS/JS%20Interactive%20Button/Ex4.html">More infomations</a>
+                          <span class="portplio_details_slash_800px">/</span>
+                            <a href="https://github.com/choi-dongmin/JS/blob/main/%23%20%EA%B0%9D%EC%B2%B4/Ex4.html">From Github.</a>
+                        </div>
+                        <div class="projects_index_text">
+                           Function is write in JS and this function is interactive with button for CSS. Vary basic but necessary system.
+                          <br><br>
+                          <a href="https://choi-dongmin.github.io/JS/JS%20Interactive%20Button/Ex4.html">More infomations</a>
+                          <span class="portplio_details_slash">/</span>
+                          <a href="https://github.com/choi-dongmin/JS/blob/main/%23%20%EA%B0%9D%EC%B2%B4/Ex4.html">GitHub</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      Random system function
+                      <div class="projects_index" id="Coding_index_04">
+                        <div class="projects_img">
+                          <img src="./Image/portplio/coding/R_P_S.png" >
+                          <center>
+                          <a href="https://github.com/choi-dongmin/JAVA/tree/%EB%B0%B0%EC%97%B4/Java/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)">More infomations</a>
+                        </div>
+                        <div class="projects_index_text">
+                          Ues the Java and with that library made a random Rock Paper Scissors game system.
+                          <br><br>
+                          <a href="https://github.com/choi-dongmin/JAVA/tree/%EB%B0%B0%EC%97%B4/Java/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)/%23%20Random%20(%E1%84%92%E1%85%AA%E1%86%A8%E1%84%85%E1%85%B2%E1%86%AF)">More infomations</a>
                         </div>
                       </div>
                     </li>
@@ -338,11 +382,11 @@
                         <div class="projects_img">
                           <img src="http://placehold.it/300x300" >
                           <center>
-                          <a href="">Check this more here.</a>
+                          <a href="">More infomations</a>
                         </div>
                         <div class="projects_index_text">
                           <br><br>
-                          <a href="">Check this more here</a>
+                          <a href="">More infomations</a>
                         </div>
                       </div>
                     </li>
@@ -352,11 +396,11 @@
                         <div class="projects_img">
                           <img src="http://placehold.it/300x300" >
                           <center>
-                          <a href="">Check this more here.</a>
+                          <a href="">More infomations.</a>
                         </div>
                         <div class="projects_index_text">
                           <br><br>
-                          <a href="">Check this more here</a>
+                          <a href="">More infomations</a>
                         </div>
                       </div>
                     </li>
@@ -391,28 +435,7 @@
       })
     </script>
 
-      // NOTE: 메인 메뉴 슬라이드 효
-
-      document.querySelector ('#button_about_me').addEventListener('click', function(){
-        document.querySelector('.main').style.transform = 'translate(0vw)';
-      })
-      document.querySelector ('#button_resume').addEventListener('click', function(){
-        document.querySelector('.main').style.transform = 'translate(-100vw)';
-      })
-      document.querySelector ('#button_portplio').addEventListener('click', function(){
-        document.querySelector('.main').style.transform = 'translate(-200vw)';
-      })
-
-      // portplio projects 슬라이드 효과
-      document.querySelector ('#button_project_coding').addEventListener('click', function(){
-        document.querySelector('.projects_main').style.transform = 'translateY(0px)';
-      })
-      document.querySelector ('#button_project_items').addEventListener('click', function(){
-        document.querySelector('.projects_main').style.transform = 'translateY(-1600px)';
-      })
-    </script>
-
-        <!-- NOTE: grid부트스트랩, script 공부, resume ul은 html  li는 script로  만들기  -->
+        <!-- NOTE:  hover 주기 , SQL2LV 문제 풀기
 
   </body>
 </html>
