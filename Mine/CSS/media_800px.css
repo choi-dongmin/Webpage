@@ -46,6 +46,25 @@
     margin-top: 268px;
     margin-left: -70px;
   }
+  .skills_boxs{
+    margin-top: -20px;
+  }
+  .skills_boxs img{
+    width: 40px;
+    padding-top: 30px;
+  }
+  #skills_boxs1 {
+    margin-left:-50%;
+  }
+  #skills_boxs2 {
+    margin-left:-40%;
+  }
+  .skills_box_inner_text{
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    padding-top: 35px;
+    margin-left: -80px;
+  }
   .projects_left_menu{
     display: none;
   }
@@ -65,6 +84,7 @@
     font-size:15px;
     padding-top:30px;
   }
+
 }
 
 @media(min-width:800px) {
