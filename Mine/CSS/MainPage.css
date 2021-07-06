@@ -72,7 +72,7 @@
       margin-top: -20px;
       font-size: 20px;
         }
-    #menu{
+    #menus{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       font-family: 'Pridi', serif;
@@ -82,15 +82,15 @@
       text-align:center;
       font-size: 45px;
     }
-    #menu div a{
+    #menus div a{
       color:lightgray;
       text-decoration: none;
     }
-    #menu div :hover{
+    #menus div :hover{
       color:black;
+      transition: 0.5s;
       text-decoration: none;
     }
-
 
     .main{
       margin-top: -50px;
@@ -212,7 +212,72 @@
       text-decoration: none;
       color: black;
     }
+    .resume_inner_education_history{
+      margin-top: 20px;
+      height: 450px;
+    }
+    .education_uni_info{
+      margin-top: 80px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 18px;
+    }
+    .education_info_text{
+      margin-top: 50px;
+    }
+    .resume_inner_experiences{
+      margin-bottom: 100px;
+    }
+    .resume_inner_experiences {
+    font-family: 'Source Code Pro', monospace;
+    }
+    .resume_inner_experiences h2{
+      font-family: 'Inconsolata', monospace;
+    }
 
+        #skills_container{
+          margin-top: 120px;
+          text-align: left;
+          align-items: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding-left:  100px;
+        }
+
+        .skills_boxs{
+          display: grid;
+          grid-template-columns: 150px 1fr;
+          margin-top: -40px;
+        }
+        .skills_boxs img{
+          width: 50px;
+          padding-top: 40px;
+        }
+        .skills_box{
+          width: 50px;
+          padding-top:10px;
+        }
+        #skills_boxs1 {
+          margin-left:30%;
+        }
+        #skills_boxs1 a:hover{
+          color: lightgray;
+        }
+        #skills_boxs2 {
+          margin-left:20%;
+        }
+        #skills_boxs2 a:hover{
+          color: lightgray;
+        }
+        .skills_box_inner_text{
+          font-family: 'Inconsolata', monospace;
+          font-size: 30px;
+          padding-top: 25px;
+          margin-left: -50px;
+        }
+        .skills_box_inner_text a{
+          text-decoration: none;
+          color : black;
+        }
     .projects_container{
       display: grid;
       grid-template-columns: 0.5fr 2fr;
@@ -298,9 +363,26 @@
       text-align: center;
       margin-left: 10%;
     }
+    @keyframes fadein {
+      0%{
+        opacity: 0;
+        margin-right: 50px;
+      }
+      20%{
+        opacity: 1;
+        margin-right: 0px;
+      }
+      80%{
+        opacity: 1;
+        margin-right: 0px;
+      }
+      100%{
+        opacity: 1;
+      }
+    }
 
     @media(max-width:1300px) {
-      #menu{
+      #menus{
         font-size: 40px;
       }
       .main{
@@ -320,6 +402,9 @@
       #contact_box span{
         display: none;
       }
+      #skills_boxs1 {
+        margin-left:10%;
+      }
       .projects_index_text{
         margin-top: -50px;
       }
@@ -332,13 +417,20 @@
       .projects_containerKR{
         padding-left: 100px;
       }
+
     }
     @media(max-width:1000px) {
-      #menu{
+      #menus{
         font-size: 30px;
       }
       #intro {
-        font-size: 30px;
+        font-size: 20px;
+      }
+      #intro_third_sentence{
+        margin-left: -50px;
+      }
+      #skills_boxs1 {
+        margin-left:-10%;
       }
       .projects_index_text{
         margin-left:  20px;
@@ -355,9 +447,16 @@
       .projects_index_textKR a{
         display: none;
       }
+      .portplio_details_slash{
+        display: none;
+      }
+
     }
     @media(min-width:1000px) {
       .projects_img a{
+        display: none;
+      }
+      .portplio_details_slash_800px{
         display: none;
       }
     }
